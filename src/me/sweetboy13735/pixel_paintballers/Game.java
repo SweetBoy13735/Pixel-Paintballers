@@ -7,6 +7,7 @@ import java.awt.Dimension;
 import java.awt.Graphics2D;
 import java.awt.image.BufferStrategy;
 
+import me.sweetboy13735.pixel_paintballers.managers.EntityManager;
 import me.sweetboy13735.pixel_paintballers.ui.Window;
 
 /**
@@ -59,7 +60,7 @@ public final class Game extends Canvas implements Runnable {
 	}
 	
 	/** Updates the logic of the game. */
-	private void tick() {}
+	private void tick() { EntityManager.tick(); }
 
 	/** Updates the visuals of the game. */
 	private void render() {
@@ -75,6 +76,8 @@ public final class Game extends Canvas implements Runnable {
 
 		graphics.setColor(BLACK);
 		graphics.fill(getBounds());
+
+		EntityManager.render(graphics);
 
 		graphics.dispose();
 		strategy.show();
