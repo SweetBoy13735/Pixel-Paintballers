@@ -56,24 +56,31 @@ public final class Window extends JFrame implements WindowListener {
 		game.start();
 	}
 
+	/** {@inheritDoc} */
 	@Override
 	public void windowOpened(WindowEvent e) {}
 
+	/** {@inheritDoc} */
 	@Override
 	public void windowClosing(WindowEvent e) {}
 
+	/** {@inheritDoc} */
 	@Override
 	public void windowClosed(WindowEvent e) {}
 
+	/** {@inheritDoc} */
 	@Override
 	public void windowIconified(WindowEvent e) {}
 
+	/** {@inheritDoc} */
 	@Override
 	public void windowDeiconified(WindowEvent e) {}
 
+	/** {@inheritDoc} */
 	@Override
 	public void windowActivated(WindowEvent e) {}
 
+	/** {@inheritDoc} */
 	@Override
 	public void windowDeactivated(WindowEvent e) {}
 

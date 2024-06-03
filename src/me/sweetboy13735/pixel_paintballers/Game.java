@@ -80,7 +80,6 @@ public final class Game extends Canvas implements Runnable {
 		strategy.show();
 	}
 
-	// See java.lang.Runnable#run()
 	/** {@inheritDoc} */
 	@Override
 	public void run() {
